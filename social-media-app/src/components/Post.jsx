@@ -18,13 +18,13 @@ const Post = ({ post }) => {
           </span>
         </h5>
         <p className="card-text">{post.body}</p>
-        {post.tags.map((tag) => (
+        {post.tags?.map((tag) => (
           <span key={tag} className="badge text-bg-primary hastag">
             {tag}
           </span>
         ))}
         <div className="alert alert-success rections" role="alert">
-          This post has been reated by {post.reaction} people.
+          This post has been reacted by {post.reaction} people.
         </div>
       </div>
     </div>
